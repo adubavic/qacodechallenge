@@ -64,22 +64,4 @@ class MainActivityTest {
             .check(matches(isDisplayed()))
     }
 
-    /// The fourth test is to verify that a user can login
-
-    @Test
-    fun test_Login(){
-
-        onView(withId(R.id.btnLogin))
-            .perform(click())
-
-        onView(withId(R.id.usernameEt))
-            .perform(typeText("Victor"))
-        onView(withId(R.id.passwordEt))
-            .perform(typeText("password123"))
-        onView(withId(R.id.btnLogin))
-            .perform(click())
-
-    }
-
-
 }

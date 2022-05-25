@@ -21,6 +21,7 @@ class LoginActivityTest{
 
     @get:Rule
     var activityScenarioRule = activityScenarioRule<LoginActivity>()
+
     /// The fourth test is to verify that a user can login
 
     @Test
@@ -33,9 +34,8 @@ class LoginActivityTest{
         onView(withId(R.id.btnLogin))
             .perform(ViewActions.click())
 
-
-       // onView(withId(R.id.user_detail_view))
-         //   .check(matches(isDisplayed()))
+        //onView(withId(R.id.user_detail_view))
+        //    .check(matches(withText(R.id.greetingTv)))
 
 
 
